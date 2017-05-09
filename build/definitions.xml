@@ -1,0 +1,31 @@
+<dcm:definition xmlns:dcm="urn:datapower:configuration:manager">
+  <dcm:object-create>
+    <Domain name="dpanda2" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+    <mAdminState>enabled</mAdminState>
+    <BaseDir>dpanda2:</BaseDir>
+    <BaseDir>local:</BaseDir>
+    <ConfigFile>dpanda2.cfg</ConfigFile>
+    <NeighborDomain class="Domain">default</NeighborDomain>
+    <URLMap>
+    <http>on</http>
+    <https>on</https>
+    <snmp>off</snmp>
+    <ftp>off</ftp>
+    <mailto>off</mailto>
+    <mq>off</mq></URLMap>
+    <FileMap>
+    <CopyFrom>on</CopyFrom>
+    <CopyTo>on</CopyTo>
+    <Delete>on</Delete>
+    <Display>on</Display>
+    <Exec>on</Exec>
+    <Subdir>on</Subdir></FileMap>
+    <MonitoringMap>
+    <Audit>off</Audit>
+    <Log>off</Log></MonitoringMap>
+    <ConfigMode>local</ConfigMode>
+    <ImportFormat>ZIP</ImportFormat>
+    <LocalIPRewrite>on</LocalIPRewrite>
+    <MaxChkpoints>3</MaxChkpoints></Domain>
+  </dcm:object-create>
+</dcm:definition>

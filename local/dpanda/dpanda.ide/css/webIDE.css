@@ -1,0 +1,43 @@
+html, body { height: 100%; padding: 0; margin: 0; font-family: "Monaco","Menlo","Ubuntu Mono","Consolas","source-code-pro",monospace; color: #fff; }
+#wrapper { width: 100%; height: 100%; }
+#top { position: fixed; top: 0px; left: 0px; width: 100%; height: 10%; background-color: #000; text-align: center; color: #fff; }
+#middle { position: fixed; top: 0px; bottom: 30px; left: 0px; width: 100%; }
+#bottom { position: fixed; bottom: 0px; left: 0px; width: 100%; height: 30px; background-color: #000; text-align: center; color: #fff; }
+#editor-toolbar { width: 100%; height: 35px; background-color: #333; font-size: 9pt; }
+#editor-area { width: 100%; height: calc(100% - 35px); }
+#request-pane, #response-pane { font-size: 9pt; }
+
+#request-pane, #response-pane { height: calc(100% - 2px); padding: 0px; }
+#request-area, #request-headers, #response-area, #response-headers  { height: calc(100% - 60px);  }
+
+
+#dialog { text-align: center; }
+#status { float: left; padding-left: 10px; font-size: 0.9em; padding-top: 7px; }
+#copyright { float: right; font-size: 0.9em; padding-top: 7px; font-weight: bold; }
+
+#editor-toolbar .ui-widget { font-size: 1.0em !important }
+#tester .tabs .ui-helper-reset { font-size: 9pt !important }
+#tester .ui-corner-all, #request-area, #response-area
+{
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+#tbl-request-headers, #tbl-response-headers
+{
+  border-collapse: collapse;
+  border: 1px solid;
+}
+#tbl-request-headers th, #tbl-request-headers td, #tbl-response-headers th, #tbl-response-headers td  { border: 1px solid; }
+#request-tools { padding: 10px;  }
+#txt-base64 { height: 100px; width: 185px; }
+#btn-base64-encode.ui-corner-all, #btn-base64-decode.ui-corner-all, #txt-base64.ui-corner-all,
+  #txt-basic-auth-username.ui-corner-all, #txt-basic-auth-password.ui-corner-all, #btn-basic-auth-header.ui-corner-all
+{
+  border-top-left-radius: 6px !important;
+  border-top-right-radius: 6px !important;
+  border-bottom-left-radius: 6px !important;
+  border-bottom-right-radius: 6px !important;
+}
